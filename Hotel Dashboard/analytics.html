@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="top">
+        <header>
+            <img class="logo" src="images/Logo.png" alt="logo">
+            <div class="header-nav">
+                <div class="notification">
+                    <img class="bell" id="js-bell" src="icons/icon-bell.svg" alt="bell">
+                    <p class="badge" id="badge-1"><strong class="badge-num">1</strong></p>
+                    <p class="badge" id="badge-2"><strong class="badge-num">2</strong></p>
+                    <p class="badge" id="badge-3"><strong class="badge-num">3</strong></p>
+                    <p class="badge" id="badge-4"><strong class="badge-num">4</strong></p>
+                    <ul class="notification-menu" id="notif-menu" style="display: none;">
+                        <li id="header-li"><strong>Notifications</strong></li>
+                        <li class="popuptext" id="li-1">
+                            <img class="img" src="images/member-1.jpg" alt="member image">
+                            <h3 class="name">Bhawana Verma</h3>
+                            <p class="comment">What are your our services?</p>
+                            <button class="btn-notif" type="button" name="delete">X</button>
+                        </li>
+                        <li class="popuptext" id="li-2">
+                            <img class="img" src="images/member-2.jpg" alt="member image">
+                            <h3 class="name">Deep Kumar</h3>
+                            <p class="comment">I don't like your facilities</p>
+                            <button class="btn-notif" type="button" name="delete">X</button>
+                        </li>
+                        <li class="popuptext" id="li-3">
+                            <img class="img" src="images/member-3.jpg" alt="member image">
+                            <h3 class="name">Pratika Chand</h3>
+                            <p class="comment">sent a message</p>
+                            <button class="btn-notif" type="button" name="delete">X</button>
+                        </li>
+                        <li class="popuptext" id="li-4">
+                            <img class="img" src="images/member-4.jpg" alt="member image">
+                            <h3 class="name">Hitesh</h3>
+                            <p class="comment">Are you going to give any discount new week?</p>
+                            <button class="btn-notif" type="button" name="delete">X</button>
+                        </li>
+                        <li class="popuptext popupalert" id="alert-bell" style="display: none;">
+                            <h3>No new notifications</h3>
+                        </li>
+                    </ul>
+                </div>
+                <span class="border-notif"></span>
+                <img class="profile-pic" src="images/profile.png" alt="User Avatar">
+            </div>
+        </header>
+        <nav>
+            <div class="side-nav" id="js-nav">
+                <a href="#top" class="nav-icons nav-selected" id="btn-top"><img src="icons/icon-dashboard.svg" alt="dashboard"><br><h4 class="a">Dashboard</h4></a>
+                <a href="#traffic" class="nav-icons" id="btn-traffic"><img src="icons/icon-visits.svg" alt="visits"><br><h4 class="a">Booking</h4></a>
+                <a href="#activity" class="nav-icons" id="btn-activity"><img src="icons/icon-members.svg" alt="members"><br><h4 class="a">Activity</h4></a>
+                <a href="#settings" class="nav-icons" id="btn-settings"><img src="icons/icon-settings.svg" alt="settings"><br><h4 class="a">Settings</h4></a>
+                <a href="index.html" class="nav-icons" id="btn-settings"><img src="icons/return-svgrepo-com.svg" class="imgb" alt="settings"><br><h4 class="b">Return</h4></a>
+            </div>
+        </nav>
+        <main class="grid-main">
+
+            <div class="grid-1">
+                <div class="dashboard-flex">
+                    <h2 class="dashboard">Dashboard</h2>
+                    <form class="search-border" action="index.html" method="POST">
+                        <input type="search" class="search-top" id="search-top" placeholder="Search">
+                    </form>
+                </div>
+                <div class="btn-delete-flex" id="js-alert">
+                    <button class="btn-delete" id="js-btn" type="button" name="delete"><strong>x</strong></button>
+                </div>
+
+            </div>
+
+            <div class="grid-2" id="traffic">
+                <h3>Bookings</h3>
+                <ul class="btn-chart">
+                    <li class="li" id="hour">Hourly</li>
+                    <li class="li" id="day">Daily</li>
+                    <li class="li" id="week">Weekly</li>
+                    <li class="li" id="month">Monthly</li>
+                </ul>
+                <div class="chart-1" style="position: relative; height:221px; width:979px">
+                    <canvas id="lineChart"></canvas>
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <h3>DAILY TRAFFIC</h3>
+                <div class="chart-2" style="position: relative; height:221px; width:979px">
+                    <canvas id="barChart"></canvas>
+                </div>
+            </div>
+
+            <div class="grid-4">
+                <h3>Customers</h3>
+                <div class="chart-3" style="position: relative; height:221px; width:979px">
+                    <canvas id="doughnutChart"></canvas>
+                </div>
+            </div>
+
+
+            <div class="grid-6" id="activity">
+                <h3>NEW MEMBERS</h3>
+                <div class="members-grid">
+                    <img class="member-img" src="images/member-1.jpg" alt="Member Avatar">
+                    <h3 class="member-name">Bhawana Verma</h3>
+                    <a class="member-mail">bhawana80@example.com</a>
+                    <p class="member-date">11/01/19</p>
+                </div>
+                <div class="members-grid">
+                    <img class="member-img" src="images/member-2.jpg" alt="Member Avatar">
+                    <h3 class="member-name">Deep Kumar</h3>
+                    <a class="member-mail">deep@example.com</a>
+                    <p class="member-date">10/01/19</p>
+                </div>
+                <div class="members-grid">
+                    <img class="member-img" src="images/member-3.jpg" alt="Member Avatar">
+                    <h3 class="member-name">Pratika</h3>
+                    <a class="member-mail">pratika@example.com</a>
+                    <p class="member-date">10/01/19</p>
+                </div>
+                <div class="members-grid">
+                    <img class="member-img" src="images/member-4.jpg" alt="Member Avatar">
+                    <h3 class="member-name">Hitesh</h3>
+                    <a class="member-mail">hitesh82@example.com</a>
+                    <p class="member-date">10/01/19</p>
+                </div>
+
+            </div>
+
+            <div class="grid-7">
+                <h3>RECENT ACTIVITY</h3>
+                <div class="activity-grid">
+                    <img class="member-img" src="images/member-1.jpg" alt="Member Avatar">
+                    <p class="member-comment">Bhawana Verma gave a like to your Ghum Villa</p>
+                    <h3 class="member-time">4 hours ago</h3>
+                    <p class="sign">&gt;</p>
+                </div>
+                <div class="activity-grid">
+                    <img class="member-img" src="images/member-2.jpg" alt="Member Avatar">
+                    <p class="member-comment">deep don't like apartment</p>
+                    <h3 class="member-time">5 hours ago</h3>
+                    <p class="sign">&gt;</p>
+                </div>
+                <div class="activity-grid">
+                    <img class="member-img" src="images/member-3.jpg" alt="Member Avatar">
+                    <p class="member-comment">Pratika liked your Website</p>
+                    <h3 class="member-time">5 hours ago</h3>
+                    <p class="sign">&gt;</p>
+                </div>
+
+
+            </div>
+
+            <div class="grid-8">
+                <h3>MESSAGE USER</h3>
+                <form autocomplete="off" class="message-form" action="index.html" method="POST">
+                <div class="autocomplete">
+                    <input type="search" class="search-bottom" id="js-search-bottom" placeholder="Search for User">
+                </div>
+                    <textarea class="textarea" id="js-textarea" name="textarea" placeholder="Message User"></textarea>
+                    <button class="btn-send" id="js-send" type="button" name="send">SEND</button>
+                </form>
+            </div>
+
+            <div class="grid-9" id="settings">
+                <h3>SETTINGS</h3>
+                <form class="settings-form" action="index.html" method="POST">
+                    <p class="switch-1-text"> Send Email Notifications</p>
+                    <label class="switch switch-1">
+                        <input type="checkbox" id="checkbox1">
+                        <span class="slider round"></span>
+                      </label>
+                    <p class="switch-2-text"> Set Profile to Public</p>
+                    <label class="switch switch-2">
+                        <input type="checkbox" id="checkbox2" checked>
+                        <span class="slider round"></span>
+                      </label>
+                    <select class="timezone" name="timezone" id="js-timezone">
+                        <option value="" disabled selected>Select Timezone</option>
+                        <option id="option1">Northern Hemisphere</option>
+                        <option id="option2">Southern Hemisphere</option>
+                        <option id="option3">Eastern Hemisphere</option>
+                        <option id="option4">Western Hemisphere</option>
+                    </select>
+                    <button class="btn-save" id="js-save" type="button" value="save" onclick="save()">SAVE</button>
+                    <button class="btn-cancel" type="button"  onclick="cancel()">CANCEL</button>
+                </form>
+            </div>
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="script1.js"></script>
+</body>
+
+</html>
