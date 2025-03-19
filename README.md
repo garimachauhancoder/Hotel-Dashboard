@@ -8,4 +8,10 @@ The **Hotel Dashboard** is a web-based application designed to simplify hotel ma
 - **Booking Management** – Monitor reservations and room availability in real time for better resource allocation.  
 - **Interactive UI** – Responsive design with visually appealing charts and tables for seamless data interpretation.  
 
-This dashboard enhances operational efficiency by offering **data-driven insights**, helping hotel administrators make informed decisions and improve guest experiences. 🚀
+##### **Technologies Used:**
+- **Frontend** - HTML, CSS (Bootstrap for styling), JavaScript (Chart.js for data visualization)
+- **Backend** - Node.js & Express.js (for API handling)
+- **Database** -  MongoDB/Firebase (for storing user and booking details)
+
+This dashboard enhances operational efficiency by offering **data-driven insights**, helping hotel administrators make informed decisions and improve guest experiences.
+
