@@ -1,4 +1,4 @@
-### **Hotel Dashboard - Web-Based Hotel Management System**  
+## **Hotel Dashboard - Web-Based Hotel Management System**  
 
 The **Hotel Dashboard** is a web-based application designed to simplify hotel management by providing **real-time insights and analytics**. Built with **HTML, CSS, and JavaScript**, it offers a user-friendly interface for tracking hotel performance and managing bookings efficiently.  
 
