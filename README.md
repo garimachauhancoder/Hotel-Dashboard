@@ -2,7 +2,7 @@
 
 The **Hotel Dashboard** is a web-based application designed to simplify hotel management by providing **real-time insights and analytics**. Built with **HTML, CSS, and JavaScript**, it offers a user-friendly interface for tracking hotel performance and managing bookings efficiently.  
 
-#### **Key Features:**  
+#### **Key Features:**   
 - **Analytics Overview** – Visualize daily, weekly, and monthly performance metrics, including occupancy rates and revenue.  
 - **User Details** – Access guest names, booking dates, and other key details for improved service personalization.  
 - **Booking Management** – Monitor reservations and room availability in real time for better resource allocation.  
